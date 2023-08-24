@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCP Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container--logo">
+            <h1>JCP</h1>
+        </div>
+
+        <section class="container--navegation-bar">
+            <button onclick="activarBarraNavegacion()" id="botonBarraNavegation">≡</button>
+            <ul id="Barra-Navegacion">
+                <li><a href="#">home</a></li>
+                <li><a href="#">Lista de Productos</a></li>
+                <li><a href="#">Informacion</a></li>
+                <button class="botonCerrarbarra" onclick="desactivarBarraNavegacion()">X</button>
+            </ul>
+        </section>
+    </header>
+    
+    <main>
+
+        <section class="container--datos-header-img">
+            <section class="container--img-descrition">
+                <img src="https://i.ibb.co/wWv21pw/IMG-20230817-120323-1.jpg" alt="Producto">
+                <p><b>Pulceras unisex</b> <br>la pulcera tiene un ancla que permite que no se suelte haciendola segura y evitando que la misma se pierda</p>
+            </section>
+
+            <section class="container--info">
+                <article>
+                    <h1>TecBis</h1>
+                    <p>Tu tienda online de bisutería y tecnología <br> Con una selección inicial de productos para todos los gustos y estilos</p>
+                </article>
+            </section>
+        </section>
+
+        <aside class="container--aside"> <!-- articles-featured--->
+            <div class="elementos-aside">
+                <img src="https://i.ibb.co/q58LF3G/8561586.png" alt="elemento">
+                <p>Bisuteria</p>
+            </div>
+            
+            <div class="elementos-aside">
+                <img src="https://i.ibb.co/KrhFcjw/5000960.png" alt="elemento">
+                <p>ELectronica</p>
+            </div>
+
+        </aside>
+
+        <section class="container--articles">
+
+            <div class="articles" id="bisuteria">
+                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
+                <article>
+                    <h3>Anillos</h3>
+                    <br>
+                    <p>Con diseños unicos</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+            <div class="articles" id="bisuteria">
+                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
+                <article>
+                    <h3>Anillos</h3>
+                    <br>
+                    <p>Con diseños unicos</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+        
+
+            <div class="articles" id="bisuteria">
+                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
+                <article>
+                    <h3>Anillos</h3>
+                    <br>
+                    <p>Con diseños unicos</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+            <div class="articles" id="bisuteria">
+                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
+                <article>
+                    <h3>Anillos</h3>
+                    <br>
+                    <p>Con diseños unicos</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+        
+
+            <div class="articles" id="bisuteria">
+                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
+                <article>
+                    <h3>Anillos</h3>
+                    <br>
+                    <p>Con diseños unicos</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+            <div class="articles" id="bisuteria">
+                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
+                <article>
+                    <h3>Anillos</h3>
+                    <br>
+                    <p>Con diseños unicos</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+<script>
+    var accion_Boton_barra_navegacion = document.getElementById("Barra-Navegacion");
+    var boton_barra_navegacion = document.getElementById("botonBarraNavegation")
+
+    function activarBarraNavegacion(){
+        accion_Boton_barra_navegacion.style.display = "block";
+        boton_barra_navegacion.style.display = "none"
+
+    }
+
+    function desactivarBarraNavegacion(){
+        accion_Boton_barra_navegacion.style.display = "none";
+        boton_barra_navegacion.style.display = "block"
+    }
+</script>
+</html>
