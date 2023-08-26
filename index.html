@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JCP Store</title>
+    <title>TecBis</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <div class="container--logo">
-            <h1>JCP</h1>
+            <h1>TecBis</h1>
         </div>
 
-        <section class="container--navegation-bar">
+        <!-- <section class="container--navegation-bar">
             <button onclick="activarBarraNavegacion()" id="botonBarraNavegation">≡</button>
             <ul id="Barra-Navegacion">
                 <li><a href="#">home</a></li>
@@ -20,41 +20,153 @@
                 <li><a href="#">Informacion</a></li>
                 <button class="botonCerrarbarra" onclick="desactivarBarraNavegacion()">X</button>
             </ul>
-        </section>
+        </section> -->
     </header>
     
     <main>
 
         <section class="container--datos-header-img">
             <section class="container--img-descrition">
-                <img src="https://i.ibb.co/wWv21pw/IMG-20230817-120323-1.jpg" alt="Producto">
-                <p><b>Pulceras unisex</b> <br>la pulcera tiene un ancla que permite que no se suelte haciendola segura y evitando que la misma se pierda</p>
+                <span></span>
+                <p><b>"Articulos de Calidad y durabilidad"</b></p>
             </section>
 
             <section class="container--info">
                 <article>
                     <h1>TecBis</h1>
-                    <p>Tu tienda online de bisutería y tecnología <br> Con una selección inicial de productos para todos los gustos y estilos</p>
+                    <p>
+                        <b>Bisutería y tecnología </b><br> en unmismo lugar. Tenemos una selección inicial de productos para todos los gustos y estilos
+                    </p>
                 </article>
             </section>
         </section>
 
         <aside class="container--aside"> <!-- articles-featured--->
-            <div class="elementos-aside">
+            <div class="elementos-aside" onclick="ocultarElectronnica()">
                 <img src="https://i.ibb.co/q58LF3G/8561586.png" alt="elemento">
                 <p>Bisuteria</p>
             </div>
             
-            <div class="elementos-aside">
+            <div class="elementos-aside" id="gestionIconoBusqueda" onclick="quitarFiltros()">
+                <img src="https://i.ibb.co/F5QvQ1B/1828747.png" alt="icono de cerrar filtros de busqueda">
+                <p>Cancelar filtros</p>
+            </div>
+
+            <div class="elementos-aside" onclick="ocultarbisuteria()">
                 <img src="https://i.ibb.co/KrhFcjw/5000960.png" alt="elemento">
                 <p>ELectronica</p>
             </div>
 
         </aside>
 
+
+        <section class="container--preguntas-frecuentes">
+
+            <h2>Preguntas Frecuentes</h2>
+
+            <section>
+                <div class="divisor-Elementos-preguntas-frecuentes"> 
+                    <b>1. ¿Cómo puedo realizar un pedido?</b>
+                    <span class="flecha-abajo" id="flecha-abajo-uno" onclick="despliegue('respuestaUno','flecha-abajo-uno', 'flecha-arriba-uno')"></span>                    
+                    
+                    <span class="flecha-arriba" id="flecha-arriba-uno" onclick="envolver('respuestaUno','flecha-abajo-uno', 'flecha-arriba-uno')"></span>
+                </div>
+                <article id="respuestaUno">
+                    Ejemplo:
+
+                    Para realizar un pedido en nuestra tienda online, sigue estos pasos:
+                    
+                    Añade los productos que deseas comprar a tu carrito de la compra.
+                    Haz clic en el botón "Realizar pedido".
+                    Introduce tus datos de contacto y dirección de envío.
+                    Elige un método de pago.
+                    Revisa tu pedido y haz clic en "Enviar".
+                </article>            
+            </section>
+
+
+
+            <section>
+                <div class="divisor-Elementos-preguntas-frecuentes"> 
+                    <b>2. ¿Cómo puedo pagar mi pedido?</b>
+                    <span class="flecha-abajo" id="flecha-abajo-dos" onclick="despliegue('respuestados','flecha-abajo-dos', 'flecha-arriba-dos')"></span>                    
+                    
+                    <span class="flecha-arriba" id="flecha-arriba-dos" onclick="envolver('respuestados','flecha-abajo-dos', 'flecha-arriba-dos')"></span>
+                </div>
+                <article id="respuestados">
+                    Ejemplo:
+
+                    Ofrecemos una variedad de métodos de pago para que puedas elegir el que más te convenga. Puedes pagar con tarjeta de crédito o débito, PayPal, transferencia bancaria o contra reembolso.
+                </article>            
+            </section>
+
+
+
+            <section>
+                <div class="divisor-Elementos-preguntas-frecuentes"> 
+                    <b>3. ¿Cuánto tiempo tarda en llegar mi pedido?</b>
+                    <span class="flecha-abajo" id="flecha-abajo-tres" onclick="despliegue('respuestatres','flecha-abajo-tres', 'flecha-arriba-tres')"></span>                    
+                    
+                    <span class="flecha-arriba" id="flecha-arriba-tres" onclick="envolver('respuestatres','flecha-abajo-tres', 'flecha-arriba-tres')"></span>
+                </div>
+                <article id="respuestatres">
+                    Ejemplo:
+
+                    El tiempo de entrega de tu pedido depende del método de envío que elijas. Los pedidos enviados a España tardan entre 2 y 5 días laborables en llegar.
+                </article>            
+            </section>
+
+
+
+            <section>
+                <div class="divisor-Elementos-preguntas-frecuentes"> 
+                    <b>4. ¿Qué debo hacer si mi pedido no llega?
+                    </b>
+                    <span class="flecha-abajo" id="flecha-abajo-Cuatro" onclick="despliegue('respuestaCuatro','flecha-abajo-Cuatro', 'flecha-arriba-Cuatro')"></span>                    
+                    
+                    <span class="flecha-arriba" id="flecha-arriba-Cuatro" onclick="envolver('respuestaCuatro','flecha-abajo-Cuatro', 'flecha-arriba-Cuatro')"></span>
+                </div>
+                <article id="respuestaCuatro">
+                    Ejemplo:
+
+                    Si tu pedido no llega en el plazo previsto, ponte en contacto con nuestro servicio de atención al cliente. Te ayudaremos a resolver el problema.
+                </article>            
+            </section>
+
+
+
+            <section>
+                <div class="divisor-Elementos-preguntas-frecuentes"> 
+                    <b>5. ¿Cómo puedo devolver un producto?</b>
+                    <span class="flecha-abajo" id="flecha-abajo-Cinco" onclick="despliegue('respuestaCinco','flecha-abajo-Cinco', 'flecha-arriba-Cinco')"></span>                    
+                    
+                    <span class="flecha-arriba" id="flecha-arriba-Cinco" onclick="envolver('respuestaCinco','flecha-abajo-Cinco', 'flecha-arriba-Cinco')"></span>
+                </div>
+                <article id="respuestaCinco">
+                    Ejemplo:
+
+                    Si no estás satisfecho con tu compra, puedes devolver el producto en un plazo de 14 días naturales desde la recepción del pedido. Para ello, sigue estos pasos:
+                    <br><br>
+                    <ul>
+                        <li> Contacta con nuestro servicio de atención al cliente y solicita una devolución.</li>
+
+                        <li> Envía el producto a la dirección que te indiquemos.</li>
+
+                        <li> Cuando recibamos el producto, te reembolsaremos el importe del pedido.</li>
+                    </ul>
+
+                </article>            
+            </section>
+
+
+
+            
+
+        </section>
+
         <section class="container--articles">
 
-            <div class="articles" id="bisuteria">
+            <div class="articles bisuteria">
                 <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
                 <article>
                     <h3>Anillos</h3>
@@ -64,41 +176,19 @@
                 <a href="#">Comprar</a>
             </div>
 
-            <div class="articles" id="bisuteria">
-                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
+            <div class="articles electronica">
+                <img src="https://i.ibb.co/444n443/download.jpg" alt="productos">
                 <article>
-                    <h3>Anillos</h3>
+                    <h3>Audifonos</h3>
                     <br>
-                    <p>Con diseños unicos</p>
-                </article>
-                <a href="#">Comprar</a>
-            </div>
-
-        
-
-            <div class="articles" id="bisuteria">
-                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
-                <article>
-                    <h3>Anillos</h3>
-                    <br>
-                    <p>Con diseños unicos</p>
-                </article>
-                <a href="#">Comprar</a>
-            </div>
-
-            <div class="articles" id="bisuteria">
-                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
-                <article>
-                    <h3>Anillos</h3>
-                    <br>
-                    <p>Con diseños unicos</p>
+                    <p>Exelente calidad a buen precio</p>
                 </article>
                 <a href="#">Comprar</a>
             </div>
 
         
 
-            <div class="articles" id="bisuteria">
+            <div class="articles bisuteria">
                 <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
                 <article>
                     <h3>Anillos</h3>
@@ -108,12 +198,56 @@
                 <a href="#">Comprar</a>
             </div>
 
-            <div class="articles" id="bisuteria">
+            <div class="articles electronica">
+                <img src="https://i.ibb.co/444n443/download.jpg" alt="productos">
+                <article>
+                    <h3>Audifonos</h3>
+                    <br>
+                    <p>Exelente calidad a buen precio</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+        
+
+            <div class="articles bisuteria">
                 <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
                 <article>
                     <h3>Anillos</h3>
                     <br>
                     <p>Con diseños unicos</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+            <div class="articles electronica">
+                <img src="https://i.ibb.co/444n443/download.jpg" alt="productos">
+                <article>
+                    <h3>Audifonos</h3>
+                    <br>
+                    <p>Exelente calidad a buen precio</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+        
+
+            <div class="articles bisuteria">
+                <img src="https://i.ibb.co/N996h60/IMG-20230817-120618-removebg-preview.jpg" alt="productos">
+                <article>
+                    <h3>Anillos</h3>
+                    <br>
+                    <p>Con diseños unicos</p>
+                </article>
+                <a href="#">Comprar</a>
+            </div>
+
+            <div class="articles electronica">
+                <img src="https://i.ibb.co/444n443/download.jpg" alt="productos">
+                <article>
+                    <h3>Audifonos</h3>
+                    <br>
+                    <p>Exelente calidad a buen precio</p>
                 </article>
                 <a href="#">Comprar</a>
             </div>
@@ -122,12 +256,25 @@
     </main>
 
     <footer>
+        <section class="footer--part-one">
+            <span class="logo"></span>
+            <p>Todos los articulos tienen entrega en Madrid</p>
+            <p>2023</p>
+        </section>
 
+        <section class="footer--part-two">
+            <a href="https://www.instagram.com/el_baul_de_ainhoa/"><span class="icono uno"></span></a> <!--Cuenta de instagran-->
+            <a href="https://www.facebook.com/ainhoa.canasgalvez.9"><span class="icono dos"></span></a> <!-- Cuenta de Facebook-->
+            <a href="https://es.wallapop.com/app/user/jeremiasc-437690537-pj9y48m7v26e/published"><span class="icono tres"></span></a> <!-- Cuenta de Wallapop-->
+        </section>
     </footer>
 </body>
 <script>
     var accion_Boton_barra_navegacion = document.getElementById("Barra-Navegacion");
     var boton_barra_navegacion = document.getElementById("botonBarraNavegation")
+    var electronica = document.getElementsByClassName("electronica")
+    var bisuteria = document.getElementsByClassName("bisuteria")
+    var iconoCerrarBusqueda = document.getElementById("gestionIconoBusqueda")
 
     function activarBarraNavegacion(){
         accion_Boton_barra_navegacion.style.display = "block";
@@ -139,5 +286,58 @@
         accion_Boton_barra_navegacion.style.display = "none";
         boton_barra_navegacion.style.display = "block"
     }
+
+    function ocultarElectronnica(){
+        for (var i = 0; i < electronica.length; i++) {
+            electronica[i].style.display = "none";
+        }
+        for (var i = 0; i < bisuteria.length; i++) {
+            bisuteria[i].style.display = "flex";
+        }
+        iconoCerrarBusqueda.style.display = "flex";
+    }
+
+function ocultarbisuteria(){
+    for (var i = 0; i < electronica.length; i++) {
+        electronica[i].style.display = "flex";
+    }
+    for (var i = 0; i < bisuteria.length; i++) {
+        bisuteria[i].style.display = "none";
+    }
+    iconoCerrarBusqueda.style.display = "flex";
+    
+}
+
+function quitarFiltros(){
+    for (var i = 0; i < electronica.length; i++) {
+        electronica[i].style.display = "flex";
+    }
+    for (var i = 0; i < bisuteria.length; i++) {
+        bisuteria[i].style.display = "flex";
+    }
+    iconoCerrarBusqueda.style.display = "none";
+    
+}
+
+function despliegue(objeto, iconoAbajo, iconoArriba){
+    var spanAbajo = document.getElementById(iconoAbajo);
+    var spanArriba = document.getElementById(iconoArriba);
+    var elementoADesplegar = document.getElementById(objeto);
+    
+    elementoADesplegar.style.display = "block";
+    spanAbajo.style.display = "none"
+    spanArriba.style.display = "block"
+}
+
+function envolver (objeto, iconoAbajo, iconoArriba){
+    var spanAbajo = document.getElementById(iconoAbajo);
+    var spanArriba = document.getElementById(iconoArriba);
+    var elementoADesplegar = document.getElementById(objeto);
+    
+    elementoADesplegar.style.display = "none";
+    spanAbajo.style.display = "block"
+    spanArriba.style.display = "none"
+}
+
 </script>
 </html>

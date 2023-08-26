@@ -9,7 +9,7 @@ html{
 }
 
 header{
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     min-width: 320px;
     padding: 10px;
@@ -17,6 +17,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 
 .container--navegation-bar{
@@ -66,7 +67,8 @@ header{
     width: 100%;
     min-width: 320px;
     height: 30vh;
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 .container--img-descrition{
@@ -79,10 +81,17 @@ header{
     border-right: 1px solid black;
     text-align: center;
     padding: 10px;
+    font-style: italic;
 }
 
-.container--img-descrition img{
+.container--img-descrition span{
+    background-image: url("https://i.ibb.co/hLXffzL/ae6dd8f4-19bc-41d7-ac8f-7e2ce0123b91-Photo-Room-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
     width: 100px;
+    margin-bottom: 10px;
 }
 
 .container--info{
@@ -91,6 +100,63 @@ header{
     text-align: center;
     font-size: 1.4rem;
 }
+
+/* Preguntas frecuentes */
+.container--preguntas-frecuentes{
+    width: 80%;
+    min-width: 280px;
+    height: max-content;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.container--preguntas-frecuentes section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 30px;
+    height: max-content;
+    padding: 10px;
+    margin-top: 05px;
+    text-align: start;
+}
+
+.divisor-Elementos-preguntas-frecuentes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container--preguntas-frecuentes b{
+    width: 90%;
+}
+
+
+.flecha-abajo{
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://i.ibb.co/pzbjjZ2/32195.png");
+}
+
+.flecha-arriba{
+    display: none;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://i.ibb.co/7gBJhS1/3838683.png");
+}
+
+.container--preguntas-frecuentes article{
+    display: none;
+    width: 90%;
+    height: max-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+
 
 .container--aside{
     display: flex;
@@ -108,6 +174,11 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+#gestionIconoBusqueda{
+    display: none;
 }
 
 .elementos-aside img{
@@ -154,3 +225,65 @@ header{
     border-radius: 8px;
     margin: 10px 0;
 }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 320px;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.footer--part-one{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+
+.footer--part-two{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.icono{
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.uno{
+    display: block;
+    background-image: url("https://i.ibb.co/vd8ssjp/instagram-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dos{
+    display: block;
+    background-image: url("https://i.ibb.co/PxF0rvc/zyro-image-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tres{
+    display: block;
+    background-image: url("https://i.ibb.co/cNvR9QG/facebook-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
