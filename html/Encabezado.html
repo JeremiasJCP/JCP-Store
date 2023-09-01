@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <header class="container--datos-header-img">
+        <section class="header--encabezado">
+            <span class="logo" id="encabezado--logo"></span>
+            <div class="container--carrito-Compras">
+                <span class="carrito-compras-img"></span>
+                <!-- <p id="numero-articulos--carrito">15</p> -->
+            </div>
+        </section>
+    </body>
+</header>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html{
+        font-size: 62.5%;
+        width: 100%;
+        background-color: #0A111F;
+
+    }
+
+    body{
+        width: 100%;
+        
+    }
+
+header{
+    height: 100vh;
+}
+
+.header--encabezado{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    background-color: #0A111F;
+
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+.logo{
+    width: 20%;
+    background-image: url("https://i.ibb.co/N2j2m45/zyro-image-removebg-preview-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container--carrito-Compras{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 20px;
+}
+
+.carrito-compras-img{
+    display: block;
+    width: 8%;
+    height: 40px;
+    background-image: url("https://i.ibb.co/WpSfJ5L/carrito-de-compras-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#numero-articulos--carrito{
+    font-size: 1rem;
+    color: #FF881D;
+}
+
+
+.header--principal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 320px;
+    background-color: #0A111F;
+    color: white;
+}
+
+
+
+.container--img-descrition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 30vh;
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+.container--img-descrition span{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.img-bisuteria{
+    background-image: url("https://i.ibb.co/hLXffzL/ae6dd8f4-19bc-41d7-ac8f-7e2ce0123b91-Photo-Room-removebg-preview.png");
+    background-size: cover;
+}
+
+.img-electronica{
+    background-image: url("https://i.ibb.co/9gSGJLC/images-removebg-preview.png");
+    background-size: contain;
+}
+
+.container--info{
+    width: 50%;
+    margin: auto 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+/* Boton llamado a la accion */
+.boton-productos{
+    position:absolute;
+    top: 27%;
+    left: 31%;
+    width: 40%;
+    max-width: 320px;
+    min-width: 130px;
+    height: max-content;
+    padding: 15px;
+    color: #0A111F;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #FF881D;
+    box-shadow: 5px 8px 6px  #0A111F;
+}
+</style>
+
+</html>

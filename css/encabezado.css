@@ -1,0 +1,25 @@
+<header class="container--datos-header-img">
+        <section class="header--encabezado">
+            <span class="logo" id="encabezado--logo"></span>
+            <div class="container--carrito-Compras">
+                <span class="carrito-compras-img"></span>
+                <p id="numero-articulos--carrito">15</p>
+            </div>
+        </section>
+        
+        <section class="header--principal">
+            <section class="container--img-descrition">
+                <span class="img-bisuteria"></span>
+            </section>
+            
+            <section class="container--info">
+                <span class="logo"></span>
+            </section>
+            
+            <section class="container--img-descrition">
+                <span class="img-electronica"></span>
+            </section>
+            
+            <a class="boton-productos" href="#Visualizar-Productos">Productos</a>
+        </section>
+    </header>
