@@ -7,58 +7,36 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container--logo">
-            <h1>TecBis</h1>
-        </div>
 
-        <!-- <section class="container--navegation-bar">
-            <button onclick="activarBarraNavegacion()" id="botonBarraNavegation">≡</button>
-            <ul id="Barra-Navegacion">
-                <li><a href="#">home</a></li>
-                <li><a href="#">Lista de Productos</a></li>
-                <li><a href="#">Informacion</a></li>
-                <button class="botonCerrarbarra" onclick="desactivarBarraNavegacion()">X</button>
-            </ul>
-        </section> -->
+    <header class="container--datos-header-img">
+        <iframe class="Header--encabezado" src="html/Encabezado.html"></iframe>
+        
+        <section class="header--principal">
+            <section class="container--img-descrition">
+                <span class="img-bisuteria"></span>
+            </section>
+            
+            <section class="container--info">
+                <span class="logo"></span>
+            </section>
+            
+            <section class="container--img-descrition">
+                <span class="img-electronica"></span>
+            </section>
+            
+            <a class="boton-productos" href="#Visualizar-Productos">Productos</a>
+        </section>
     </header>
     
     <main>
 
-        <section class="container--datos-header-img">
-            <section class="container--img-descrition">
-                <span></span>
-                <p><b>"Articulos de Calidad y durabilidad"</b></p>
-            </section>
 
-            <section class="container--info">
-                <article>
-                    <h1>TecBis</h1>
-                    <p>
-                        <b>Bisutería y tecnología </b><br> en unmismo lugar. Tenemos una selección inicial de productos para todos los gustos y estilos
-                    </p>
-                </article>
-            </section>
+
+        <section class="container--informacion-web">
+            <article>
+                Somos una tienda pequeña pero con una gran variedad de productos en constante crecimiento. Queremos distinguirnos por la calidad y el precio de nuestros productos, ofreciendo siempre lo mejor a nuestros clientes. En nuestra tienda online podrás encontrar desde artículos de electrónica y accesorios muy lindos para ti o para darle a esa persona especial. Además, a través de las plataformas de compra podrás contactar  con nosotros para hacerte entrega del producto. No lo dudes más y visita nuestras redes sociales para enterarte del resto de nuestros productos, donde encontrarás eso que buscas al mejor precio. Somos tu tienda de confianza y queremos que disfrutes de una experiencia de compra única e inolvidable.
+            </article>
         </section>
-
-        <aside class="container--aside"> <!-- articles-featured--->
-            <div class="elementos-aside" onclick="ocultarElectronnica()">
-                <img src="https://i.ibb.co/q58LF3G/8561586.png" alt="elemento">
-                <p>Bisuteria</p>
-            </div>
-            
-            <div class="elementos-aside" id="gestionIconoBusqueda" onclick="quitarFiltros()">
-                <img src="https://i.ibb.co/F5QvQ1B/1828747.png" alt="icono de cerrar filtros de busqueda">
-                <p>Cancelar filtros</p>
-            </div>
-
-            <div class="elementos-aside" onclick="ocultarbisuteria()">
-                <img src="https://i.ibb.co/KrhFcjw/5000960.png" alt="elemento">
-                <p>ELectronica</p>
-            </div>
-
-        </aside>
-
 
         <section class="container--preguntas-frecuentes">
 
@@ -158,11 +136,27 @@
                 </article>            
             </section>
 
-
-
-            
-
         </section>
+
+
+        <aside class="container--aside" id="Visualizar-Productos"> <!-- articles-featured--->
+            <div class="elementos-aside" onclick="ocultarElectronnica()">
+                <img src="https://i.ibb.co/q58LF3G/8561586.png" alt="elemento">
+                <p>Bisuteria</p>
+            </div>
+            
+            <div class="elementos-aside" id="gestionIconoBusqueda" onclick="quitarFiltros()">
+                <img src="https://i.ibb.co/F5QvQ1B/1828747.png" alt="icono de cerrar filtros de busqueda">
+                <p>Cancelar filtros</p>
+            </div>
+
+            <div class="elementos-aside" onclick="ocultarbisuteria()">
+                <img src="https://i.ibb.co/KrhFcjw/5000960.png" alt="elemento">
+                <p>ELectronica</p>
+            </div>
+
+        </aside>
+
 
         <section class="container--articles">
 
@@ -173,17 +167,19 @@
                     <br>
                     <p>Con diseños unicos</p>
                 </article>
-                <a href="#">Comprar</a>
+                <a href="#">Ver el producto</a>
+                <!-- <iframe class="insercion-Carrito-Compras" src="html/CarritoCompras.html"></iframe> -->
             </div>
 
             <div class="articles electronica">
                 <img src="https://i.ibb.co/444n443/download.jpg" alt="productos">
                 <article>
-                    <h3>Audifonos</h3>
+                    <h3 onclick="SumarProductoCarrito()">Audifonos</h3>
                     <br>
                     <p>Exelente calidad a buen precio</p>
                 </article>
-                <a href="#">Comprar</a>
+                <a href="#">Ver el producto</a>
+                <!-- <iframe  class="insercion-Carrito-Compras" src="html/CarritoCompras.html"></iframe> -->
             </div>
 
         
@@ -195,7 +191,8 @@
                     <br>
                     <p>Con diseños unicos</p>
                 </article>
-                <a href="#">Comprar</a>
+                <a href="#">Ver el producto</a>
+                <!-- <iframe class="insercion-Carrito-Compras" src="html/CarritoCompras.html"></iframe> -->
             </div>
 
             <div class="articles electronica">
@@ -205,7 +202,8 @@
                     <br>
                     <p>Exelente calidad a buen precio</p>
                 </article>
-                <a href="#">Comprar</a>
+                <a href="#">Ver el producto</a>
+                <!-- <iframe class="insercion-Carrito-Compras" src="html/CarritoCompras.html"></iframe> -->
             </div>
 
         
@@ -217,7 +215,8 @@
                     <br>
                     <p>Con diseños unicos</p>
                 </article>
-                <a href="#">Comprar</a>
+                <a href="#">Ver el producto</a>
+                <!-- <iframe class="insercion-Carrito-Compras" src="html/CarritoCompras.html"></iframe> -->
             </div>
 
             <div class="articles electronica">
@@ -227,7 +226,8 @@
                     <br>
                     <p>Exelente calidad a buen precio</p>
                 </article>
-                <a href="#">Comprar</a>
+                <a href="#">Ver el producto</a>
+                <!-- <iframe class="insercion-Carrito-Compras" src="html/CarritoCompras.html"></iframe> -->
             </div>
 
         
@@ -239,7 +239,8 @@
                     <br>
                     <p>Con diseños unicos</p>
                 </article>
-                <a href="#">Comprar</a>
+                <a href="#">Ver el producto</a>
+                <!-- <iframe class="insercion-Carrito-Compras" src="html/CarritoCompras.html"></iframe> -->
             </div>
 
             <div class="articles electronica">
@@ -249,7 +250,8 @@
                     <br>
                     <p>Exelente calidad a buen precio</p>
                 </article>
-                <a href="#">Comprar</a>
+                <a href="#">Ver el producto</a>
+                <!-- <iframe class="insercion-Carrito-Compras" src="html/CarritoCompras.html"></iframe> -->
             </div>
 
         </section>
@@ -264,8 +266,8 @@
 
         <section class="footer--part-two">
             <a href="https://www.instagram.com/el_baul_de_ainhoa/"><span class="icono uno"></span></a> <!--Cuenta de instagran-->
-            <a href="https://www.facebook.com/ainhoa.canasgalvez.9"><span class="icono dos"></span></a> <!-- Cuenta de Facebook-->
-            <a href="https://es.wallapop.com/app/user/jeremiasc-437690537-pj9y48m7v26e/published"><span class="icono tres"></span></a> <!-- Cuenta de Wallapop-->
+            <a href="https://www.facebook.com/ainhoa.canasgalvez.9"><span class="icono tres"></span></a> <!-- Cuenta de Wallapop-->
+            <a href="https://es.wallapop.com/app/user/jeremiasc-437690537-pj9y48m7v26e/published"><span class="icono dos"></span></a> <!-- Cuenta de Facebook-->
         </section>
     </footer>
 </body>
@@ -340,4 +342,5 @@ function envolver (objeto, iconoAbajo, iconoArriba){
 }
 
 </script>
+<script src="../JS/CarritoCompras.js"></script>
 </html>

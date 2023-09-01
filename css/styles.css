@@ -8,66 +8,27 @@ html{
     font-size: 62.5%;
 }
 
-header{
-    background-color: rgb(0, 0, 0);
+body{
+    background-color: #E3E3E3;
+}
+
+.Header--encabezado{
     width: 100%;
     min-width: 320px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-}
-
-.container--navegation-bar{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-}
-
-.container--navegation-bar button{
-    font-size: 3rem;
-    background-color: transparent;
     border: none;
-    color: white;
-}
-
-.container--navegation-bar ul{
-    display: none;
-    width: 25vh;
-    height: 100vh;
+    height: 70px;
+    margin-bottom: -10px;
+    position: fixed;
 }
 
 
-.container--navegation-bar li{
-    background-color: black;
-    border: 1px solid white;
-    padding: 10px;
-    text-align: center;
-    list-style: none;
-}
-
-.container--navegation-bar a{
-    color: white;
-    text-decoration: none;
-}
-
-.botonCerrarbarra{
-    color: rgba(255, 255, 255, 0.547);
-    width: 100%;
-    margin-top: 60px;
-}
-
-
-.container--datos-header-img{
+.header--principal{
     display: flex;
     flex-direction: row;
     width: 100%;
     min-width: 320px;
     height: 30vh;
-    background-color: rgb(0, 0, 0);
+    background-color: #0A111F;
     color: white;
 }
 
@@ -76,7 +37,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 33%;
     height: 30vh;
     border-right: 1px solid black;
     text-align: center;
@@ -85,13 +46,21 @@ header{
 }
 
 .container--img-descrition span{
-    background-image: url("https://i.ibb.co/hLXffzL/ae6dd8f4-19bc-41d7-ac8f-7e2ce0123b91-Photo-Room-removebg-preview.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
     margin-bottom: 10px;
+}
+
+.img-bisuteria{
+    background-image: url("https://i.ibb.co/hLXffzL/ae6dd8f4-19bc-41d7-ac8f-7e2ce0123b91-Photo-Room-removebg-preview.png");
+    background-size: cover;
+}
+
+.img-electronica{
+    background-image: url("https://i.ibb.co/9gSGJLC/images-removebg-preview.png");
+    background-size: contain;
 }
 
 .container--info{
@@ -101,6 +70,43 @@ header{
     font-size: 1.4rem;
 }
 
+/* Boton llamado a la accion */
+.boton-productos{
+    position:absolute;
+    top: 27%;
+    left: 31%;
+    width: 40%;
+    max-width: 320px;
+    min-width: 130px;
+    height: max-content;
+    padding: 15px;
+    color: #0A111F;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #FF881D;
+    box-shadow: 5px 8px 6px  #0A111F;
+}
+
+
+/* Informacion de la web */
+
+.container--informacion-web{
+    width: 100%;
+    min-width: 320px;
+    height: max-content;
+    padding: 25px;
+    padding-top: 15%;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    background-color: #263248;
+    color: white;
+}
+
+
 /* Preguntas frecuentes */
 .container--preguntas-frecuentes{
     width: 80%;
@@ -108,6 +114,11 @@ header{
     height: max-content;
     margin: 30px auto;
     text-align: center;
+    font-size: 1.4rem;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #7E8AA2;
+    box-shadow: 5px 8px 6px  #0A111F;
 }
 
 .container--preguntas-frecuentes section{
@@ -202,12 +213,18 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid #0A111F;
+    background-color: #263248;
+    color: white;
+    font-weight: 300;
     border-radius: 10px;
     margin: 10px 25px;
+    box-shadow: 2px 2px 1px  #FF881D;
+
 }
 
 .articles img{
+    border-radius: 30px;
     width: 100%;
 }
 
@@ -217,14 +234,16 @@ header{
 }
 
 .articles a{
-    background-color: aqua;
+    background-color: #0A111F;
     text-decoration: none;
-    color: black;
+    color:#E3E3E3;
     padding: 10px;
     border: 1px solid black;
     border-radius: 8px;
     margin: 10px 0;
 }
+
+
 
 footer{
     display: flex;
