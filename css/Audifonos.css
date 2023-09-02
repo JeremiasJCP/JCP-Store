@@ -31,24 +31,42 @@ main{
     justify-content: center;
 }
 
-.imagenes-productos{
+.imagenesProductosPrincipales{
     width: 100%;
-    height: 40vh;
-    background-color: black;
+    height: 28vh;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
 }
 
-.imagenes-productos span{
-    display: block;
+.imagenes-productos {
     width: 100%;
+    margin-left: -20px;
     height: 100%;
-    background-image: url("https://i.ibb.co/9gSGJLC/images-removebg-preview.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin: 20px 0px 20px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;  /* Para que quede en un punto obligatorio */
+}
+
+.imagenes-productos img {
+    aspect-ratio: 3/2;
+    width: 100%;
+    min-width: 320px;
+    margin-left: 20px;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+  }
+
+.imagenes-productos a{
+    margin: 0 50px;
 }
 
 .datos-iniciales--article{
@@ -74,17 +92,22 @@ main{
 
 
 .Descripcion--producto{
+    width: 90%;
+    border-radius: 20px;
+    padding: 16px;
     margin-top: 20px;
-    padding: 10px;
-    font-size: 1.7rem;
-    background-color: blanchedalmond;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.408);
+    color: azure;
+    margin-bottom: 20px;
 }
 
-video{
-    width: 100%;
+.video-producto{
+    width: 80%;
     min-width: 320px;
-
-    background-color: black;
+    aspect-ratio: 16/9;
+    object-fit: fill;
+    border-radius: 20px;
 }
 
 .instrucciones-compra{
@@ -92,6 +115,7 @@ video{
     min-height: 320px;
     height: max-content;
     overflow: none;
+    border: none;
 }
 
 
