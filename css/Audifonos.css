@@ -1,3 +1,27 @@
+/*Color Theme Swatches in Hex
+.Crevasse-1-hex { color: #B4BEC9; }
+.Crevasse-2-hex { color: #159A9C; }
+.Crevasse-3-hex { color: #002333; }
+.Crevasse-4-hex { color: #DEEFE7; }
+.Crevasse-5-hex { color: #FFFFFF; }
+
+Color Theme Swatches in RGBA 
+.Crevasse-1-rgba { color: rgba(179, 189, 200, 1); }
+.Crevasse-2-rgba { color: rgba(20, 154, 156, 1); }
+.Crevasse-3-rgba { color: rgba(0, 35, 51, 1); }
+.Crevasse-4-rgba { color: rgba(221, 239, 230, 1); }
+.Crevasse-5-rgba { color: rgba(255, 255, 255, 1); }
+
+Color Theme Swatches in HSLA 
+.Crevasse-1-hsla { color: hsla(211, 16, 74, 1); }
+.Crevasse-2-hsla { color: hsla(180, 76, 34, 1); }
+.Crevasse-3-hsla { color: hsla(198, 100, 10, 1); }
+.Crevasse-4-hsla { color: hsla(151, 34, 90, 1); }
+.Crevasse-5-hsla { color: hsla(0, 0, 100, 1); }
+
+*/
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +38,12 @@ html{
     width: 100%;
     min-width: 320px;
     height: 70px;
-    border:none
+    border:none;
+}
+
+
+body{
+    background-color: #E3E3E3;
 }
 
 header{
@@ -22,7 +51,7 @@ header{
 }
 
 main{
-    margin-top: -20px;
+    margin-top: -10px;
     width: 100%;
     min-width: 320px;
     display: flex;
@@ -31,9 +60,9 @@ main{
     justify-content: center;
 }
 
-.imagenesProductosPrincipales{
+/* .imagenesProductosPrincipales{
     width: 100%;
-    height: 28vh;
+    height: 30vh;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -51,7 +80,7 @@ main{
     display: flex;
     align-items: center;
     overflow: scroll;
-    scroll-snap-type: x mandatory;  /* Para que quede en un punto obligatorio */
+    scroll-snap-type: x mandatory;  /* Para que quede en un punto obligatorio 
 }
 
 .imagenes-productos img {
@@ -67,7 +96,8 @@ main{
 
 .imagenes-productos a{
     margin: 0 50px;
-}
+    width: 100%;
+} */
 
 .datos-iniciales--article{
     width: 100%;
@@ -92,14 +122,18 @@ main{
 
 
 .Descripcion--producto{
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
     padding: 16px;
     margin-top: 20px;
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.408);
-    color: azure;
+    background-color:#B4BEC9;
+    color: black;
     margin-bottom: 20px;
+}
+
+.Descripcion--producto h2{
+    margin-bottom: 10px;
 }
 
 .video-producto{
@@ -116,6 +150,7 @@ main{
     height: max-content;
     overflow: none;
     border: none;
+    background-color: #DEEFE7;
 }
 
 
@@ -147,6 +182,6 @@ aside{
     border-radius: 8px;
     font-size: 1.8rem;
     font-weight: bold;
-    background-color: #FF881D;
+    background-color: #159A9C;
     box-shadow: 5px 8px 6px  #0A111F;
 }

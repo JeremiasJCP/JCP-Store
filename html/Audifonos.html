@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="../css/Audifonos.css">
     <link rel="stylesheet" href="../css/estandar-article.css">
     <link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/carrusels.css">
 </head>
 <body>
      <!-- Header Encabezado-->
     <iframe class="Encabezado-Pagina" src="./Encabezado.html"></iframe>
     <main>
 
-        <section class="imagenesProductosPrincipales">
+        <div class="carousel-container ">
+            <div class="carousel-images">
+                
+                <img class="carousel-image active" id="img-carrusel-1" src="https://i.ibb.co/qRcDhXW/i3454682466.png" alt="Imgen del producto">
+
+                <img class="carousel-image active" id="img-carrusel-2" src="https://i.ibb.co/WKXpw12/i3450773596.png" alt="Imgen del producto">
+
+                <img class="carousel-image active" id="img-carrusel-3" src="https://i.ibb.co/48d7yht/Lenovo-LP5-Review-New-Budget-Headphones-Under-15-18.png" alt="Imgen del producto">
+
+                <img class="carousel-image active" id="img-carrusel-4" src="https://i.ibb.co/Yjg4sYk/Lenovo-LP5-an-lisis-auriculares-econ-micos-Bluetooth-5-1-Google-Chrome-02-09-2023-12-17-16.jpg" alt="Imgen del producto">
+                
+            </div>
+            <button class="carousel-button prev-button" onclick="prevImage()">&#8249;</button>
+            <button class="carousel-button next-button" onclick="nextImage()">&#8250;</button>
+          </div>
+
+
+        <!-- <section class="imagenesProductosPrincipales">
             <figure class="imagenes-productos">
                 <a href="https://i.ibb.co/qRcDhXW/i3454682466.png"><img class="img-producto" id="img-carrusel-1" src="https://i.ibb.co/qRcDhXW/i3454682466.png" alt="Imgen del producto"></a>
 
@@ -23,20 +41,22 @@
 
                 <a href="https://i.ibb.co/Yjg4sYk/Lenovo-LP5-an-lisis-auriculares-econ-micos-Bluetooth-5-1-Google-Chrome-02-09-2023-12-17-16.jpg"><img class="img-producto" id="img-carrusel-4" src="https://i.ibb.co/Yjg4sYk/Lenovo-LP5-an-lisis-auriculares-econ-micos-Bluetooth-5-1-Google-Chrome-02-09-2023-12-17-16.jpg" alt="Imgen del producto"></a>
             </figure>
-        </section>
+        </section> -->
 
         <!--Boton de comprar producto-->
         
     
         <section class="datos-iniciales--article">
-            <h1 class="title">Audifonos Lenovo</h1>
-            <h3 class="price">14€</h3>
-            <p class="pequeños-datos">Audifonos de gran calidad y duravilidad</p>
+            <h1 class="title">Audífonos Lenovo LP5</h1>
+            <h3 class="price">14 €</h3>
+            <p class="pequeños-datos">Audífonos de gran calidad y durabilidad</p>
         </section>
 
         
         <article class="Descripcion--producto">
-            <h2>Descriopcion</h2>
+            <center>
+                <h2>Descripcion</h2>
+            </center>
             Los auriculares Lenovo LP5 son unos auriculares inalámbricos de alta calidad que ofrecen un sonido HiFi estéreo, comodidad y una batería de larga duración.
             <br><br>
             El sonido HiFi estéreo se consigue gracias a sus controladores dinámicos de 13 mm, que proporcionan graves profundos y agudos claros.
@@ -57,4 +77,5 @@
         </aside>
     </main>
 </body>
+<script src="../JS/Carrusel.js"></script>
 </html>
