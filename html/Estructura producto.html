@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulceras</title>
+    <link rel="stylesheet" href="../css/Audifonos.css">
+    <link rel="stylesheet" href="../css/estandar-article.css">
+    <link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/carrusels.css">
+</head>
+<body>
+     <!-- Header Encabezado-->
+    <iframe class="Encabezado-Pagina" src="./Encabezado.html"></iframe>
+    <main>
+
+        <div class="carousel-container ">
+            <div class="carousel-images">
+                
+                <img class="carousel-image active" id="img-carrusel-1" alt="Imgen del producto" src="">
+
+                <img class="carousel-image active" id="img-carrusel-2" alt="Imgen del producto" src="">
+
+                <img class="carousel-image active" id="img-carrusel-3" alt="Imgen del producto" src="">
+
+                <img class="carousel-image active" id="img-carrusel-4" alt="Imgen del producto" src="">
+                
+            </div>
+            <button class="carousel-button prev-button" onclick="prevImage()">&#8249;</button>
+            <button class="carousel-button next-button" onclick="nextImage()">&#8250;</button>
+          </div>
+
+        <!--Boton de comprar producto-->
+        
+    
+        <section class="datos-iniciales--article">
+            <h1 class="title"></h1>
+            <h3 class="price"></h3>
+            <p class="pequeños-datos"></p>
+        </section>
+
+        
+        <article class="Descripcion--producto">
+            <center>
+                <h2>Descripcion</h2>
+            </center>
+            
+        </article>
+
+        <video class="video-producto" src="../Multimedia/audífonos .mp4" autoplay muted loop></video>
+        
+        <iframe class="instrucciones-compra" src="../html/instrucciones-compra.html"></iframe>
+        
+        <aside>
+            <div class="contenedor-boton-desplazamiento">
+                <a class="boton-comprar Efecto-pulse" href="">Comprar</a>
+            </div>
+        </aside>
+    </main>
+</body>
+<script src="../JS/Carrusel.js"></script>
+</html>
