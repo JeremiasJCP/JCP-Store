@@ -97,7 +97,14 @@ body{
     width: 50%;
     margin: auto 0;
     text-align: center;
-    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container--info span{
+    font-size: 2.5rem;font-family: 'Lobster', cursive;
+
+    margin-bottom: 5%;
 }
 
 /* Boton llamado a la accion */
@@ -116,7 +123,7 @@ body{
     border-radius: 8px;
     font-size: 1.8rem;
     font-weight: bold;
-    background-color: #FF881D;
+    background-color: #159A9C;
     box-shadow: 5px 8px 6px  #0A111F;
 }
 
@@ -223,7 +230,7 @@ body{
     font-weight: 300;
     border-radius: 10px;
     margin: 10px 25px;
-    box-shadow: 2px 2px 1px  #FF881D;
+    box-shadow: 2px 2px 1px  #159A9C;
 
 }
 

@@ -1,25 +1,9 @@
-/*Color Theme Swatches in Hex
+Color Theme Swatches in Hex
 .Crevasse-1-hex { color: #B4BEC9; }
 .Crevasse-2-hex { color: #159A9C; }
 .Crevasse-3-hex { color: #002333; }
 .Crevasse-4-hex { color: #DEEFE7; }
 .Crevasse-5-hex { color: #FFFFFF; }
-
-Color Theme Swatches in RGBA 
-.Crevasse-1-rgba { color: rgba(179, 189, 200, 1); }
-.Crevasse-2-rgba { color: rgba(20, 154, 156, 1); }
-.Crevasse-3-rgba { color: rgba(0, 35, 51, 1); }
-.Crevasse-4-rgba { color: rgba(221, 239, 230, 1); }
-.Crevasse-5-rgba { color: rgba(255, 255, 255, 1); }
-
-Color Theme Swatches in HSLA 
-.Crevasse-1-hsla { color: hsla(211, 16, 74, 1); }
-.Crevasse-2-hsla { color: hsla(180, 76, 34, 1); }
-.Crevasse-3-hsla { color: hsla(198, 100, 10, 1); }
-.Crevasse-4-hsla { color: hsla(151, 34, 90, 1); }
-.Crevasse-5-hsla { color: hsla(0, 0, 100, 1); }
-
-*/
 
 
 *{
@@ -60,44 +44,6 @@ main{
     justify-content: center;
 }
 
-/* .imagenesProductosPrincipales{
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    
-}
-
-.imagenes-productos {
-    width: 100%;
-    margin-left: -20px;
-    height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;  /* Para que quede en un punto obligatorio 
-}
-
-.imagenes-productos img {
-    aspect-ratio: 3/2;
-    width: 100%;
-    min-width: 320px;
-    margin-left: 20px;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 5px;
-    scroll-snap-align: center;
-  }
-
-.imagenes-productos a{
-    margin: 0 50px;
-    width: 100%;
-} */
 
 .datos-iniciales--article{
     width: 100%;
@@ -174,7 +120,7 @@ aside{
     flex-direction: column;
     align-items: center;
     justify-content: center;   
-    background: #0A111F;
+    background: #0a111f69;
     position: fixed;
     bottom: 0;
 }
@@ -188,6 +134,37 @@ aside{
     border-radius: 8px;
     font-size: 1.8rem;
     font-weight: bold;
-    background-color: #159A9C;
     box-shadow: 5px 8px 6px  #0A111F;
 }
+
+
+.boton-comprar{
+    --hover-shadows: 16px 16px 33px #159A9C,
+                      -16px -16px 33px #159A9C;
+    --accent: fuchsia;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 1.1em;
+    background-color: #002333;
+    color: white;
+    padding: 10px 1px;
+    transition: box-shadow ease-in-out 0.3s,
+                background-color ease-in-out 0.1s,
+                letter-spacing ease-in-out 0.1s,
+                transform ease-in-out 0.1s;
+    box-shadow: 4px 4px 2px #159A9C,
+                -4px -4px 2px #a4d0d1;
+   }
+   
+   button:hover {
+    box-shadow: var(--hover-shadows);
+   }
+   
+   button:active {
+    box-shadow: var(--hover-shadows),
+                 var(--accent) 0px 0px 30px 5px;
+    background-color: var(--accent);
+    transform: scale(0.95);
+   }
+   
