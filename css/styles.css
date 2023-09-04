@@ -136,6 +136,10 @@ body{
     color: white;
 }
 
+.container--informacion-web h2{
+    margin-bottom: 20px;
+}
+
 
 /* Preguntas frecuentes */
 .container--preguntas-frecuentes{
@@ -232,7 +236,15 @@ body{
 
 .articles article{
     width: 100%;
+    font-size: 1.4rem;
     text-align: center;
+    font-weight: 200;
+}
+
+.articles .precio{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .articles a{
